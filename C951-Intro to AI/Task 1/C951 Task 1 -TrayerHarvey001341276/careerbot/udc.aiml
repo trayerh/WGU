@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  
+    <category>
+        <pattern>HI</pattern>
+            <template>
+                Hi! I'm CS Career Bot. I'm designed to help you see if any careers in the CS field are right for you!
+                Do you want answer some questions for me so I can help guide you?
+                <button>
+                    <text> Sure! </text>
+                    <postback>guide</postback>
+                </button>
+                <button>
+                    <text> No thanks~ </text>
+                    <postback>end</postback>
+                </button>
+            </template>
+    </category>
+    
+    <!-- GUIDE START -->
+    <category>
+        <pattern>GUIDE</pattern>
+        <template>
+            Great! So are you interested in Computer Science because you enjoy coding, or do you prefer to focus on the design aspect?
+            <button>
+                <text> I love writing code </text>
+                <postback>code</postback>
+            </button>
+            <button>
+                <text> I prefer the overall design </text>
+                <postback>design</postback>
+            </button>
+        </template>
+    </category>
+        <!-- CODE -->
+        <category>
+            <pattern>code</pattern>
+            <template>
+                Code is awesome, like solving a puzzle! How do you feel about math?
+                <button>
+                    <text> Love it! </text>
+                    <postback>math code</postback>
+                </button>
+                <button>
+                    <text> Not my thing tbh </text>
+                    <postback>nomath code</postback>
+                </button>
+            </template>
+        </category>
+            <!-- MATH -->
+            <category>
+                <pattern>math code</pattern>
+                <template>
+                    Okay nerd! Jk ;) When you work on projects, do you prefer to be in control, or would you rather follow instructions?
+                    <button>
+                        <text> I'm most comfortable when I'm in control </text>
+                        <postback>control math code</postback>
+                    </button>
+                    <button>
+                        <text> I work better with clear guidance </text>
+                        <postback>instruction math code</postback>
+                    </button>
+                </template>
+            </category>
+                <!-- CONTROL -->
+                <category>
+                    <pattern>control math code</pattern>
+                    <template>
+                        So you enjoy the process of coding, you're down with math, and you like taking the lead. These qualities indicate you may enjoy being a 
+                        Data Scientist! 
+                        <link>
+                            <text>Click here for more information on what Data Scientists do</text>
+                            <url>https://www.coursera.org/articles/what-is-a-data-scientist</url>
+                        </link>
+                        <button>
+                            <text> Start over? </text>
+                            <postback>guide</postback>
+                        </button>
+                    </template>
+                </category>
+                
+                <!-- INSTRUCTION -->
+                <category>
+                    <pattern>instruction math code</pattern>
+                    <template>
+                        So you enjoy the process of coding, you're down with math, and you prefer having guidelines to follow. These qualities indicate you may enjoy being a 
+                        Financial Analyst! 
+                        <link>
+                            <text>Click here for more information on what Financial Analysts do</text>
+                            <url>https://www.coursera.org/articles/financial-analyst</url>
+                        </link>
+                        <button>
+                            <text> Start over? </text>
+                            <postback>guide</postback>
+                        </button>
+                    </template>
+                </category>
+                
+            <!-- NO MATH -->
+            <category>
+                <pattern>nomath code</pattern>
+                <template>
+                    I say leave math to the computers! When you work on projects, do you prefer to be in control, or would you rather follow instructions?
+                    <button>
+                        <text> I'm most comfortable when I'm in control </text>
+                        <postback>control nomath code</postback>
+                    </button>
+                    <button>
+                        <text> I work better with clear guidance </text>
+                        <postback>instruction nomath code</postback>
+                    </button>
+                </template>
+            </category>
+            
+                <!-- CONTROL -->
+                <category>
+                    <pattern>control nomath code</pattern>
+                    <template>
+                        So you enjoy the process of coding, would rather leave the math to others, and you like taking the lead. These qualities indicate you may enjoy being in
+                        Engineering Management!
+                        <link>
+                            <text>Click here for more information on what Engineering Managers do</text>
+                            <url>https://thebestschools.org/careers/career-guide/engineering-managers/</url>
+                        </link>
+                        <button>
+                            <text> Start over? </text>
+                            <postback>guide</postback>
+                        </button>
+                    </template>
+                </category>
+                
+                <!-- INSTRUCTION -->
+                <category>
+                    <pattern>instruction nomath code</pattern>
+                    <template>
+                        So you enjoy the process of coding, would rather leave the math to others, and you prefer having guidelines to follow. These qualities indicate you may enjoy being a 
+                        Software Engineer! 
+                        <link>
+                            <text>Click here for more information on what Software Engineers do</text>
+                            <url>https://www.coursera.org/articles/software-engineer</url>
+                        </link>
+                        <button>
+                            <text> Start over? </text>
+                            <postback>guide</postback>
+                        </button>
+                    </template>
+                </category>
+        
+        <!-- DESIGN -->
+        <category>
+            <pattern>design</pattern>
+            <template>
+                Yeah! Computers can generate all the code, why should I have to?? How do you feel about math?
+                <button>
+                    <text> Love it! </text>
+                    <postback>math design</postback>
+                </button>
+                <button>
+                    <text> Not my thing tbh </text>
+                    <postback>nomath design</postback>
+                </button>
+            </template>
+        </category>
+            <!-- MATH -->
+            <category>
+                <pattern>math design</pattern>
+                <template>
+                    Okay nerd! Jk ;) When you work on projects, do you prefer to be in control, or would you rather follow instructions?
+                    <button>
+                        <text> I'm most comfortable when I'm in control </text>
+                        <postback>control math design</postback>
+                    </button>
+                    <button>
+                        <text> I work better with clear guidance </text>
+                        <postback>instruction math design</postback>
+                    </button>
+                </template>
+            </category>
+                <!-- CONTROL -->
+                <category>
+                    <pattern>control math design</pattern>
+                    <template>
+                    So you enjoy the design element, you're down with math, and you like taking the lead. These qualities indicate you may enjoy being an 
+                    Independent Game Developer! 
+                    <link>
+                        <text>Click here for more information on what Indie Game Devs do</text>
+                        <url>https://www.coursera.org/articles/game-developer</url>
+                    </link>
+                    <button>
+                        <text> Start over? </text>
+                        <postback>guide</postback>
+                    </button>
+                </template>
+                </category>
+                
+                <!-- INSTRUCTION -->
+                <category>
+                    <pattern>instruction math design</pattern>
+                    <template>
+                        So you enjoy the design element, you're down with math, and you prefer having guidelines to follow. These qualities indicate you may enjoy being a 
+                        3D Design Modeler! 
+                        <link>
+                            <text>Click here for more information on what 3D Designers do</text>
+                            <url>https://www.zippia.com/3d-designer-jobs/</url>
+                        </link>
+                        <button>
+                            <text> Start over? </text>
+                            <postback>guide</postback>
+                        </button>
+                    </template>
+                </category>
+            
+            <!-- NOMATH -->
+            <category>
+                <pattern>nomath design</pattern>
+                <template>
+                    I say leave math to the computers! When you work on projects, do you prefer to be in control, or would you rather follow instructions?
+                    <button>
+                        <text> I'm most comfortable when I'm in control </text>
+                        <postback>control nomath design</postback>
+                    </button>
+                    <button>
+                        <text> I work better with clear guidance </text>
+                        <postback>instruction nomath design</postback>
+                    </button>
+                </template>
+            </category>
+                <!--CONTROL-->
+                <category>
+                    <pattern>control nomath design</pattern>
+                    <template>
+                        So you enjoy the design element, would rather leave the math to others, and you like taking the lead. These qualities indicate you may enjoy being in
+                        Design Engineer!
+                        <link>
+                            <text>Click here for more information on what Design Engineers do</text>
+                            <url>https://www.energy.gov/eere/wind/career-map-design-engineer#:~:text=Design%20Engineers%20use%20software%20such,how%20to%20build%20the%20product.</url>
+                        </link>
+                        <button>
+                            <text> Start over? </text>
+                            <postback>guide</postback>
+                        </button>
+                    </template>
+                </category>
+                
+                <!--INSTRUCTION-->
+                <category>
+                    <pattern>instruction nomath design</pattern>
+                    <template>
+                        So you enjoy the design element, would rather leave the math to others, and you prefer having guidelines to follow. These qualities indicate you may enjoy being a 
+                        Front-End Software Developer! 
+                        <link>
+                            <text>Click here for more information on what Front End Devs do</text>
+                            <url>https://www.coursera.org/articles/front-end-developer</url>
+                        </link>
+                        <button>
+                            <text> Start over? </text>
+                            <postback>guide</postback>
+                        </button>
+                    </template>
+                </category>
+</aiml>
