@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="968.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_controller.scheduler.reportsController">
+   <children>
+      <Label layoutX="293.0" layoutY="104.0" text="Scheduler - Report Management" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="44.0" layoutY="42.0" mnemonicParsing="false" onAction="#backToHome" style="-fx-background-color: white;" text="Back" />
+      <Label layoutX="100.0" layoutY="42.0" text="USER: " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="844.0" layoutY="42.0" mnemonicParsing="false" onAction="#closeButtonOnAction" style="-fx-background-color: white;" text="Exit" />
+      <Label fx:id="username" layoutX="146.0" layoutY="42.0" textFill="LIME">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="207.0" text="Appointment Type" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="496.0" layoutY="207.0" text="Matching Appointment Count" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="apptTypeComboBox" layoutX="314.0" layoutY="242.0" onAction="#getAppointmentsByType" prefWidth="150.0" promptText="Type" />
+      <Label fx:id="apptTypeCountLabel" layoutX="609.0" layoutY="232.0" textFill="#003cff">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="362.0" layoutY="290.0" text="Month" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="524.0" layoutY="290.0" text="Upcoming Appointments" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="apptMonthComboBox" layoutX="314.0" layoutY="317.0" onAction="#getAppointmentsByMonth" prefWidth="150.0" promptText="Month" />
+      <Label fx:id="apptMonthCountLabel" layoutX="607.0" layoutY="307.0" textFill="#003cff">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="contactComboBox" layoutX="376.0" layoutY="425.0" onAction="#getAppointmentsByContact" prefWidth="150.0" promptText="Contact" />
+      <Label layoutX="96.0" layoutY="424.0" text="View Schedule Report for Contact:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentsTable" layoutX="30.0" layoutY="467.0" prefHeight="200.0" prefWidth="896.0" style="-fx-background-color: grey;">
+         <columns>
+            <TableColumn fx:id="apptIdCol" prefWidth="75.0" text="Appt. ID" />
+            <TableColumn fx:id="titleCol" prefWidth="88.0" text="Title" />
+            <TableColumn fx:id="typeCol" prefWidth="103.0" text="Type" />
+            <TableColumn fx:id="descCol" prefWidth="183.0" text="Description" />
+            <TableColumn fx:id="startCol" prefWidth="178.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="171.0" text="End" />
+            <TableColumn fx:id="apptCustomerIdCol" prefWidth="96.0" text="Customer ID" />
+         </columns>
+      </TableView>
+      <Label layoutX="533.0" layoutY="424.0" text="or" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="customerComboBox" layoutX="643.0" layoutY="425.0" onAction="#getAppointmentsByCustomer" prefWidth="150.0" promptText="Customer" />
+      <Label layoutX="555.0" layoutY="424.0" text="Customer:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="contactActiveLabel" layoutX="437.0" layoutY="402.0" textFill="#05ff75" />
+      <Label fx:id="customerActiveLabel" layoutX="702.0" layoutY="402.0" textFill="#05ff75" />
+   </children>
+</AnchorPane>
