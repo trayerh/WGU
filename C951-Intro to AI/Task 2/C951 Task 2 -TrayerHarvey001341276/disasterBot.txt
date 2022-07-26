@@ -1,0 +1,98 @@
+function sysCall_init()
+    -- Code to detect from course files
+    noseSensor_Middle=sim.getObject("./sensingNose_Middle") -- Handle of the middle proximity sensor
+    noseSensor_Left=sim.getObject("./sensingNose_Left") -- Handle of the left proximity sensor
+    noseSensor_Right=sim.getObject("./sensingNose_Right") -- Handle of the right proximity sensor
+    
+    -- This is executed exactly once, the first time this script is executed
+    bubbleRobBase=sim.getObject('.') -- this is bubbleRob's handle
+    leftMotor=sim.getObject("./leftMotor") -- Handle of the left motor
+    rightMotor=sim.getObject("./rightMotor") -- Handle of the right motor
+    noseSensor=sim.getObject("./sensingNose_Middle") -- Handle of the proximity sensor
+    minMaxSpeed={50*math.pi/180,300*math.pi/180} -- Min and max speeds for each motor
+    backUntilTime=-1 -- Tells whether bubbleRob is in forward or backward mode
+    robotCollection=sim.createCollection(0)
+    sim.addItemToCollection(robotCollection,sim.handle_tree,bubbleRobBase,0)
+    distanceSegment=sim.addDrawingObject(sim.drawing_lines,4,0,-1,1,{0,1,0})
+    robotTrace=sim.addDrawingObject(sim.drawing_linestrip+sim.drawing_cyclic,2,0,-1,200,{1,1,0},nil,nil,{1,1,0})
+    graph=sim.getObject('./graph')
+    distStream=sim.addGraphStream(graph,'bubbleRob clearance','m',0,{1,0,0})
+    -- Create the custom UI:
+    xml = '<ui title="'..sim.getObjectAlias(bubbleRobBase,1)..' speed" closeable="false" resizeable="false" activate="false">'..[[
+                <hslider minimum="0" maximum="100" on-change="speedChange_callback" id="1"/>
+            <label text="" style="* {margin-left: 300px;}"/>
+        </ui>
+        ]]
+    ui=simUI.create(xml)
+    speed=(minMaxSpeed[1]+minMaxSpeed[2])*0.5
+    simUI.setSliderValue(ui,1,100*(speed-minMaxSpeed[1])/(minMaxSpeed[2]-minMaxSpeed[1]))
+    
+end
+
+function sysCall_sensing()
+    local result,distData=sim.checkDistance(robotCollection,sim.handle_all)
+    if result>0 then
+        sim.addDrawingObjectItem(distanceSegment,nil)
+        sim.addDrawingObjectItem(distanceSegment,distData)
+        sim.setGraphStreamValue(graph,distStream,distData[7])
+    end
+    local p=sim.getObjectPosition(bubbleRobBase,-1)
+    sim.addDrawingObjectItem(robotTrace,p)
+end 
+
+function speedChange_callback(ui,id,newVal)
+    speed=minMaxSpeed[1]+(minMaxSpeed[2]-minMaxSpeed[1])*newVal/100
+end
+
+function sysCall_actuation() 
+    result=sim.readProximitySensor(noseSensor) -- Read the proximity sensor
+    resultLeft=sim.readProximitySensor(noseSensor_Left) -- Read the proximity sensor
+    resultRight=sim.readProximitySensor(noseSensor_Right) -- Read the proximity sensor
+    -- If we detected something, we set the backward mode:
+    if (result>0) then backUntilTime=sim.getSimulationTime()+4 end 
+
+    if (backUntilTime<sim.getSimulationTime()) then
+        -- When in forward mode, we simply move forward at the desired speed
+        sim.setJointTargetVelocity(leftMotor,speed)
+        sim.setJointTargetVelocity(rightMotor,speed)
+    else
+        -- When in backward mode, we simply backup in a curve at reduced speed
+        --CHECK FOR OBSTACLES-------------------------------------------------
+        --If left has more distance than right
+        if (resultLeft>resultRight) then
+            --turn right
+            sim.setJointTargetVelocity(rightMotor,-speed/4)
+            sim.setJointTargetVelocity(leftMotor,-speed/16)
+        end
+        --if right has more distance than left
+        if (resultRight>resultLeft) then
+            --turn left
+            sim.setJointTargetVelocity(leftMotor,-speed/4)
+            sim.setJointTargetVelocity(rightMotor,-speed/16)
+        end
+    end
+    
+    -- Code for object sensing from course files
+    local result_To_Detect,distance,detectedPoint,detectedObjectHandle=sim.readProximitySensor(noseSensor_Middle)
+    if (result_To_Detect>0) then    
+        if detectedObjectHandle then
+            if sim.getObjectAlias(detectedObjectHandle) == 'Person' then
+                print("Survivor found! ObjectHandle- " .. tostring(sim.getObjectAlias(detectedObjectHandle)))
+                
+                -- simInt simGetObjectColor(simInt objectHandle,simInt index,simInt colorComponent,simFloat* rgbData)
+                -- Colors: Red: {1,0,0}, Green = {0,1,0}, Blue = {0,0,1}
+                sim.setObjectColor(noseSensor_Middle,0,sim.colorcomponent_ambient_diffuse,{0,1,0}) -- Green = {0,1,0}
+                -- Stop Bot
+                sim.setJointTargetVelocity(leftMotor,0)
+                sim.setJointTargetVelocity(rightMotor,0)
+            end
+        end
+    else
+        sim.setObjectColor(noseSensor_Middle,0,sim.colorcomponent_ambient_diffuse,{1,0,0}) -- RED = {1,0,0}
+    end
+    
+end
+
+function sysCall_cleanup() 
+    simUI.destroy(ui)
+end 
