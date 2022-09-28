@@ -7,7 +7,7 @@ for Bachelor's of Science in Computer Science
 Graduated August 2022
 
 
-Classes:
+# Classes:
 
 C482 - Software I, April '20
 
