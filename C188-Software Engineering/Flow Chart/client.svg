@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="client.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="365.69388"
+     inkscape:cy="696.92574"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="960"
+     inkscape:window-height="1017"
+     inkscape:window-x="2872"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3">
+    <rect
+       style="fill:#000000;stroke-width:0.75418013"
+       id="rect10"
+       width="201.25394"
+       height="235.46446"
+       x="3.4745038"
+       y="5.4089456" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="fill:#808080;stroke-width:0.30965835"
+       id="rect65"
+       width="43.564934"
+       height="13.630746"
+       x="158.21819"
+       y="106.29469" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="56.92841"
+       y="57.905254"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         x="56.92841"
+         y="57.905254"
+         style="fill:#ffffff;stroke-width:0.26458332">Welcome, User</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.614628"
+       y="81.71373"
+       id="text18"><tspan
+         sodipodi:role="line"
+         x="13.614628"
+         y="81.71373"
+         style="fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20">Orders:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.86449"
+       y="115.58573"
+       id="text18-4"><tspan
+         sodipodi:role="line"
+         x="159.86449"
+         y="115.58573"
+         style="font-size:7.05555534px;fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20-2">Order Parts</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="116.77004"
+       y="82.586288"
+       id="text18-7"><tspan
+         sodipodi:role="line"
+         x="116.77004"
+         y="82.586288"
+         style="font-size:5.29166651px;fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20-7">Status:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.637216"
+       y="95.944283"
+       id="text14-8"><tspan
+         sodipodi:role="line"
+         id="tspan12-7"
+         x="13.637216"
+         y="95.944283"
+         style="fill:#00ffff;stroke-width:0.26458332">SAMPLE Order A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="109.01923"
+       y="93.544334"
+       id="text18-6"><tspan
+         sodipodi:role="line"
+         x="109.01923"
+         y="93.544334"
+         style="font-size:7.05555534px;fill:#ffff00;stroke-width:0.26458332"
+         id="tspan20-0">Processing</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.548762"
+       y="114.90678"
+       id="text14-8-8"><tspan
+         sodipodi:role="line"
+         id="tspan12-7-5"
+         x="13.548762"
+         y="114.90678"
+         style="fill:#00ffff;stroke-width:0.26458332">SAMPLE Order B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.87743"
+       y="113.83482"
+       id="text18-6-8"><tspan
+         sodipodi:role="line"
+         x="108.87743"
+         y="113.83482"
+         style="font-size:7.05555534px;fill:#00ff00;stroke-width:0.26458332"
+         id="tspan20-0-6">Completed</tspan></text>
+    <rect
+       style="fill:#808080;stroke-width:0.30965835"
+       id="rect65-9"
+       width="43.564938"
+       height="13.630746"
+       x="158.28726"
+       y="121.60604" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="165.54622"
+       y="130.89702"
+       id="text18-4-1"><tspan
+         sodipodi:role="line"
+         x="165.54622"
+         y="130.89702"
+         style="font-size:7.05555534px;fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20-2-7">Reorder</tspan></text>
+    <rect
+       style="fill:#808080;stroke-width:0.30965835"
+       id="rect65-0"
+       width="43.564938"
+       height="13.630746"
+       x="158.10645"
+       y="140.94841" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.75273"
+       y="150.23932"
+       id="text18-4-4"><tspan
+         sodipodi:role="line"
+         x="159.75273"
+         y="150.23932"
+         style="font-size:7.05555534px;fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20-2-71">Order Parts</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.437388"
+       y="149.56041"
+       id="text14-8-8-5"><tspan
+         sodipodi:role="line"
+         id="tspan12-7-5-6"
+         x="13.437388"
+         y="149.56041"
+         style="fill:#00ffff;stroke-width:0.26458332">SAMPLE Order C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.76606"
+       y="148.48845"
+       id="text18-6-8-1"><tspan
+         sodipodi:role="line"
+         x="108.76606"
+         y="148.48845"
+         style="font-size:7.05555534px;fill:#00ff00;stroke-width:0.26458332"
+         id="tspan20-0-6-4">Completed</tspan></text>
+    <rect
+       style="fill:#808080;stroke-width:0.30965835"
+       id="rect65-9-6"
+       width="43.564938"
+       height="13.630746"
+       x="158.17549"
+       y="156.25958" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="165.43445"
+       y="165.55042"
+       id="text18-4-1-6"><tspan
+         sodipodi:role="line"
+         x="165.43445"
+         y="165.55042"
+         style="font-size:7.05555534px;fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20-2-7-1">Reorder</tspan></text>
+    <rect
+       style="fill:#808080;stroke-width:0.30965835"
+       id="rect65-0-1"
+       width="43.564938"
+       height="13.630746"
+       x="158.03607"
+       y="176.12717" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="159.68234"
+       y="185.41808"
+       id="text18-4-4-8"><tspan
+         sodipodi:role="line"
+         x="159.68234"
+         y="185.41808"
+         style="font-size:7.05555534px;fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20-2-71-3">Order Parts</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="13.366399"
+       y="184.73917"
+       id="text14-8-8-5-3"><tspan
+         sodipodi:role="line"
+         id="tspan12-7-5-6-6"
+         x="13.366399"
+         y="184.73917"
+         style="fill:#00ffff;stroke-width:0.26458332">SAMPLE Order D</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="108.6954"
+       y="183.66721"
+       id="text18-6-8-1-0"><tspan
+         sodipodi:role="line"
+         x="108.6954"
+         y="183.66721"
+         style="font-size:7.05555534px;fill:#00ff00;stroke-width:0.26458332"
+         id="tspan20-0-6-4-3">Completed</tspan></text>
+    <rect
+       style="fill:#808080;stroke-width:0.30965835"
+       id="rect65-9-6-3"
+       width="43.564938"
+       height="13.630746"
+       x="158.1051"
+       y="191.43834" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="165.36407"
+       y="200.72917"
+       id="text18-4-1-6-8"><tspan
+         sodipodi:role="line"
+         x="165.36407"
+         y="200.72917"
+         style="font-size:7.05555534px;fill:#ffffff;stroke-width:0.26458332"
+         id="tspan20-2-7-1-3">Reorder</tspan></text>
+  </g>
+</svg>
