@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="725.0" prefWidth="1065.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_controller.scheduler.appointmentsController">
+   <children>
+      <Label layoutX="180.0" layoutY="76.0" text="Scheduler - Appointment Management" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appointmentsTable" layoutX="20.0" layoutY="324.0" prefHeight="200.0" prefWidth="896.0" style="-fx-background-color: grey;">
+         <columns>
+            <TableColumn fx:id="apptIdCol" prefWidth="75.0" text="Appt. ID" />
+            <TableColumn fx:id="titleCol" prefWidth="65.0" text="Title" />
+            <TableColumn fx:id="descCol" prefWidth="161.0" text="Description" />
+            <TableColumn fx:id="locationCol" prefWidth="72.0" text="Location" />
+            <TableColumn fx:id="apptContactIdCol" prefWidth="84.0" text="Contact ID" />
+            <TableColumn fx:id="typeCol" prefWidth="55.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="149.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="154.0" text="End" />
+            <TableColumn fx:id="apptCustomerIdCol" prefWidth="79.0" text="Customer ID" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="apptContactComboBox" layoutX="392.0" layoutY="287.0" prefHeight="25.0" prefWidth="88.0" promptText="Contact " />
+      <TextField fx:id="apptTitleTextField" layoutX="95.0" layoutY="287.0" prefHeight="25.0" prefWidth="61.0" promptText="Title" />
+      <TextField fx:id="apptDescriptionTextField" layoutX="188.0" layoutY="287.0" prefHeight="25.0" prefWidth="113.0" promptText="Description" />
+      <TextField fx:id="apptLocationTextField" layoutX="321.0" layoutY="287.0" prefHeight="25.0" prefWidth="61.0" promptText="Location" />
+      <TextField fx:id="apptTypeTextField" layoutX="484.0" layoutY="288.0" prefHeight="25.0" prefWidth="44.0" promptText="Type" />
+      <TextField fx:id="apptStartTextField" layoutX="660.0" layoutY="287.0" prefHeight="25.0" prefWidth="80.0" promptText="Start Time" />
+      <TextField fx:id="apptEndTextField" layoutX="748.0" layoutY="287.0" prefHeight="25.0" prefWidth="67.0" promptText="End Time" />
+      <ComboBox fx:id="apptCustomerComboBox" layoutX="825.0" layoutY="287.0" prefHeight="25.0" prefWidth="101.0" promptText="Customer" />
+      <Label fx:id="apptIdLabel" layoutX="41.0" layoutY="287.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" layoutX="933.0" layoutY="287.0" mnemonicParsing="false" onAction="#modifyAppt" style="-fx-background-color: green;" text="Add" textFill="WHITE" />
+      <Button fx:id="loadButton" layoutX="931.0" layoutY="350.0" mnemonicParsing="false" onAction="#loadAppt" style="-fx-background-color: blue;" text="Load" textFill="WHITE" />
+      <Button fx:id="deleteButton" layoutX="985.0" layoutY="350.0" mnemonicParsing="false" onAction="#deleteAppt" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+      <Button fx:id="back" layoutX="34.0" layoutY="32.0" mnemonicParsing="false" onAction="#backToHome" style="-fx-background-color: white;" text="Back" />
+      <Label layoutX="90.0" layoutY="32.0" text="USER: " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="989.0" layoutY="32.0" mnemonicParsing="false" onAction="#closeButtonOnAction" style="-fx-background-color: white;" text="Exit" />
+      <Label fx:id="username" layoutX="136.0" layoutY="32.0" textFill="LIME">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="apptIdLabel" layoutX="52.0" layoutY="289.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="apptDatePicker" layoutX="538.0" layoutY="287.0" prefHeight="25.0" prefWidth="113.0" promptText="Date" />
+      <RadioButton fx:id="allRadio" layoutX="941.0" layoutY="391.0" mnemonicParsing="false" onAction="#alterView" selected="true" text="View All" textFill="WHITE" />
+      <RadioButton fx:id="weekRadio" layoutX="941.0" layoutY="416.0" mnemonicParsing="false" onAction="#alterView" text="View This Week" textFill="WHITE" />
+      <RadioButton fx:id="monthRadio" layoutX="942.0" layoutY="440.0" mnemonicParsing="false" onAction="#alterView" text="View This Month" textFill="WHITE" />
+   </children>
+</AnchorPane>
